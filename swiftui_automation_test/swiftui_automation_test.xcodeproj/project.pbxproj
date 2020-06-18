@@ -14,6 +14,7 @@
 		0F56C989249BA96D00962FF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F56C988249BA96D00962FF9 /* Preview Assets.xcassets */; };
 		0F56C98C249BA96D00962FF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F56C98A249BA96D00962FF9 /* LaunchScreen.storyboard */; };
 		0F56C997249BA96D00962FF9 /* swiftui_automation_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56C996249BA96D00962FF9 /* swiftui_automation_testUITests.swift */; };
+		0F56C9A2249BBBE400962FF9 /* ListSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56C9A1249BBBE400962FF9 /* ListSelectedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		0F56C992249BA96D00962FF9 /* swiftui_automation_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftui_automation_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F56C996249BA96D00962FF9 /* swiftui_automation_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_automation_testUITests.swift; sourceTree = "<group>"; };
 		0F56C998249BA96D00962FF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F56C9A1249BBBE400962FF9 /* ListSelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSelectedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				0F56C98A249BA96D00962FF9 /* LaunchScreen.storyboard */,
 				0F56C98D249BA96D00962FF9 /* Info.plist */,
 				0F56C987249BA96D00962FF9 /* Preview Content */,
+				0F56C9A1249BBBE400962FF9 /* ListSelectedView.swift */,
 			);
 			path = swiftui_automation_test;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				0F56C980249BA96900962FF9 /* AppDelegate.swift in Sources */,
 				0F56C982249BA96900962FF9 /* SceneDelegate.swift in Sources */,
+				0F56C9A2249BBBE400962FF9 /* ListSelectedView.swift in Sources */,
 				0F56C984249BA96900962FF9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
