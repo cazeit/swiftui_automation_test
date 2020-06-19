@@ -18,8 +18,8 @@ struct ContentView: View {
     private var listData = [1,2,3,4]
  
     var body: some View {
-        NavigationView{
-            TabView(selection: $selection){
+        NavigationView {
+            TabView(selection: $selection) {
                 // 1st Tab
                 VStack {
                     HStack {
@@ -90,20 +90,19 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-                .accessibility(identifier: "first_tab")
                 
                 // 2nd Tab
                 List(listData, id: \.self) { currentRow in
                     NavigationLink(destination: ListSelectedView(rowSelected: currentRow),label: {
                         Text("List Row \(currentRow)")
                             .padding()
-                            .accessibility(identifier: "list_cell_text")
                     })
+                    .accessibility(identifier: "list_cell_link")
                 }
+                .accessibility(identifier: "list")
                 .onAppear {
                     UITableView.appearance().tableFooterView = UIView()
                 }
-                .accessibility(identifier: "list")
                 .tabItem {
                     VStack {
                         Image("second")
@@ -111,7 +110,6 @@ struct ContentView: View {
                     }
                 }
                 .tag(1)
-                .accessibility(identifier: "second_tab")
             }
             .navigationBarTitle(Text("\(selection + 1). View"), displayMode: .inline)
         }
